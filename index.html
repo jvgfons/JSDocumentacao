@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Documentação Técnica de JavaScript</title>
+  <link rel="stylesheet" href="src/styles.css" />
+</head>
+<body>
+
+  <nav id="navbar">
+    <header>Documentação JS</header>
+    <a class="nav-link" href="#Introducao">Introdução</a>
+    <hr>
+    <a class="nav-link" href="#Variaveis_e_Tipos">Variáveis e Tipos</a>
+    <hr>
+    <a class="nav-link" href="#Funcoes">Funções</a>
+    <hr>
+    <a class="nav-link" href="#Objetos">Objetos</a>
+    <hr>
+    <a class="nav-link" href="#Eventos">Eventos</a>
+  </nav>
+
+  <main id="main-doc">
+
+    <section class="main-section" id="Introducao">
+      <header>Introdução</header>
+      <p>JavaScript é uma linguagem de programação utilizada na web para tornar páginas interativas.</p>
+      <p>É interpretada, orientada a objetos e baseada em protótipos.</p>
+      <p>JavaScript pode ser executado em navegadores ou no servidor com Node.js.</p>
+      <code>console.log('Olá, mundo!');</code>
+      <ul>
+        <li>Interatividade</li>
+        <li>Execução no navegador</li>
+        <li>Popularidade alta</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Variaveis_e_Tipos">
+      <header>Variáveis e Tipos</header>
+      <p>Existem três formas de declarar variáveis: <code>var</code>, <code>let</code> e <code>const</code>.</p>
+      <p>Tipos primitivos incluem string, number, boolean, null, undefined e symbol.</p>
+      <p>O tipo de uma variável pode ser verificado com <code>typeof</code>.</p>
+      <code>let nome = "João";</code>
+      <ul>
+        <li>var é função-local</li>
+        <li>let e const são bloco-local</li>
+        <li>const não permite reatribuição</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Funcoes">
+      <header>Funções</header>
+      <p>Funções são blocos de código que executam tarefas quando chamadas.</p>
+      <p>Podem ser declaradas com a palavra-chave <code>function</code> ou como funções anônimas.</p>
+      <p>Funções também podem ser atribuídas a variáveis ou passadas como argumento.</p>
+      <code>function soma(a, b) { return a + b; }</code>
+      <ul>
+        <li>Funções nomeadas</li>
+        <li>Funções anônimas</li>
+        <li>Arrow functions</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Objetos">
+      <header>Objetos</header>
+      <p>Objetos são coleções de pares chave-valor.</p>
+      <p>Podem conter métodos, que são funções dentro de objetos.</p>
+      <p>É possível acessar propriedades com notação ponto ou colchete.</p>
+      <code>let pessoa = { nome: "Ana", idade: 25 };</code>
+      <ul>
+        <li>Flexíveis</li>
+        <li>Estruturam dados</li>
+        <li>Suportam herança via protótipos</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Eventos">
+      <header>Eventos</header>
+      <p>Eventos permitem responder a ações do usuário, como cliques ou teclas pressionadas.</p>
+      <p>São tratados com <code>addEventListener</code>.</p>
+      <p>Podem ser associados a qualquer elemento do DOM.</p>
+      <code>botao.addEventListener("click", function() { alert("Clicou!"); });</code>
+      <ul>
+        <li>click</li>
+        <li>keydown</li>
+        <li>submit</li>
+      </ul>
+    </section>
+
+  </main>
+
+</body>
+</html>
